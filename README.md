@@ -1,2 +1,16 @@
 # Proyect4-Acamica-DataWarehouse
 Fourth and last project to obtain the Full Stack Web Developer diploma with Acámica
+
+1. Descargue todos los archivos involucrados en el repositorio (ambas carpetas "Backend" y "Front").
+2. Habrá el IDE con la ruta local de los archivos descargados.
+3. Configure las variables de entorno para la aplicación, las cuales se encuentran en el archivo “.env”. En este archivo encontrará tres (3) secciones: 3.1. Sección 1: Variables de entorno para la base de datos: 3.1.1. DB_HOST: host a utilizar para la base de datos. 3.1.2. DB_PORT: Puerto de conexión hacia la base de datos. 3.1.3. DB_NAME: Nombre por otorgar a la base de datos. 3.1.4. DB_USER: Usuario por utilizar en la base de datos. 3.1.5. DB_PASSWORD: Contraseña requerida para la conexión de la base de datos. 3.2. Sección 2: Variables de entorno para el servidor: 3.2.1. APP_PORT: Puerto de conexión hacia el servidor para tener acceso a los endpoints (sí llega a cambiar el valor de 3000 para el puerto, ingresar a los archivos login.js, users.js, location.js, companies.js y contacts.js y altere las líneas que tengan "localhots:3000" por el puerto asigando). 3.3. Sección 3: Variables de entorno para el json web token: 3.3.1. KEY_JWT: Contraseña para firmar el json web token. Nota: El archivo ya cuenta con los datos predeterminados, con los cuales se realizó el desarrollo y pruebas de la aplicación.
+4. Ubíquese desde la terminal en la ruta local de los archivos descargados, específicamente en la carpeta "Backend".
+5. Ejecute el comando “npm install” en la terminal para instalar todas las dependencias de la aplicación. Luego de esto notará que se crearan dos archivos: 5.1. node_modules: Carpeta de almacenamiento para los paquetes de cada dependencia instalada. 5.2. package-lock.json: Librerías requeridas para cada dependencia.
+6. Ejecute el comando “node app.js” o en su defecto “nodemon app.js” en la terminal para iniciar la aplicación. Una vez iniciada la aplicación notará lo siguiente: 6.1. Se crearán ocho (8) tablas en la base de datos con el nombre que le otorgó desde el archivo “.env” (user, region, country, city, company, channel, contact, contactChannel); y cada una de estas tablas cuenta con información básica para el funcionamiento de la aplicación. 6.2. Se utilizarán las conexiones a los puertos indicados en el archivo “.env”. 6.3. Espere máximo 10 segundos en lo que la aplicación crea toda la base de datos, si llega a fallar, realice esta operación hasta que en la terminal se evidencie la creación de las tablas sin error (esto sucede debido a la velocidad de creación de las tablas, por ende, es posible que requiera detener la aplicación y volver a ejecutar "node app.js", sin borrar nada ya creado en la base de datos).
+7. Para detener la aplicación, solo ingrese el comando “Ctrl + C” en la terminal para realizar desconexiones de puertos.
+8. Para el uso de la aplicación a nivel de front end, ejecute vía live server (o directamente el archivo) el archivo nombrado como "index.html" dentro de la carpeta "Front". 
+9. Para iniciar sesión, los usuarios son:
+Usuario: admin, Pass: Cris123. (punto incluído), Rol: Administrador
+Usuario: lcruz13, Pass: Laura123. (punto incluído), Rol: Básico
+Usuario: lucia86, Pass: Lucia123. (punto incluído), Rol: Básico
+Usuario: fleon20, Pass: Fabian123. (punto incluído), Rol: Básico
