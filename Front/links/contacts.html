@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Contactos</title>
+    <link rel="stylesheet" href="//cdn.datatables.net/1.11.0/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="../styles/contacts.css">
+    <link rel="stylesheet" href="../styles/fonts.css">
+</head>
+<body>
+    <section id="errorLoginPage">
+        <span id="errorLogin">Código de error: 401</span>
+        <p id="messageErrorLogin">Usted no se encuentra autentificado, por favor ingrese al siguiente link: <a href="../index.html" id="loginPage">datawarehouse.com</a> y autentifíquese.</p>
+    </section>
+    <section id="loginApproved">
+        <header>
+            <a href="../index.html" id="mainPage">
+                <img src="../images/logo.svg" alt="Logo">
+            </a>
+            <div id="pages">
+                <a href="" id="contactsPage" class="pagesDataWarehouse">Contactos</a>
+                <a href="./companies.html" id="companiesPage" class="pagesDataWarehouse">Compañías</a>
+                <a href="./users.html" id="usersPage" class="pagesDataWarehouse">Usuarios</a>
+                <a href="./location.html" id="locationsPage" class="pagesDataWarehouse">Región / Ciudad</a>
+            </div>
+        </header>
+        <h1>Contactos</h1>
+        <button class="icon-magnifying-glass" id="searchFilter"></button>
+        <button id="newContact">Agregar contacto</button>
+        <div id="containerSelectedInfo">
+            <div id="contactsSelectedDone">
+                <div id="tagInfoCountSelected">2 seleccionados</div>
+                <button id="deleteAllContactsSelected"><span class="icon-delete"></span>Eliminar contactos</button>
+            </div>
+        </div>
+        <table id="tableContacts" class="">
+            <thead>
+                <tr>
+                    <th class="icon-check_box_outline_blank" id="totalCheckbox"></th>
+                    <th>Contacto&nbsp;&nbsp;&nbsp;<div class="order"><span class="icon-arrows"></span></div></th>
+                    <th>País/Región&nbsp;&nbsp;&nbsp;<div class="order"><span class="icon-arrows"></span></div></th>
+                    <th>Compañía&nbsp;&nbsp;&nbsp;<div class="order"><span class="icon-arrows"></span></div></th>
+                    <th>Cargo&nbsp;&nbsp;&nbsp;<div class="order"><span class="icon-arrows"></span></div></th>
+                    <th>Interés&nbsp;&nbsp;&nbsp;<div class="order"><span class="icon-arrows"></span></div></th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <footer></footer>
+
+        <div id="modalAlertDeleteUser">
+            <div id="alertBeforeDelete">
+                <img src="../images/deleteAlert.jpg" alt="Delete alert">
+                <p id="userDelete"></p>
+                <div id="buttonsDeleteAlert">
+                    <button id="cancelDelete">Cancelar</button>
+                    <button id="deleteDone">Eliminar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalFormContact">
+            <div id="dataContact">
+                <div id="backgroundColorTop"></div>
+                <div id="formHeader">
+                    <h2>Nuevo contacto</h2>
+                    <span id="closeForm">&times;</span>
+                </div>
+                <div id="mainInfoContact">
+                    <div id="inputName">
+                        <label for="contact">Nombre<span class="obligatory">*</span></label>
+                        <input type="text" name="contact" id="contact">
+                        <span id="alertName">Este campo es obligatorio</span>
+                    </div>
+                    <div id="inputLastName">
+                        <label for="lastName">Apellido<span class="obligatory">*</span></label>
+                        <input type="text" name="lastName" id="lastName">
+                        <span id="alertLastName">Error en datos ingresados</span>
+                    </div>
+                    <div id="inputProfile">
+                        <label for="profile">Cargo<span class="obligatory">*</span></label>
+                        <input type="text" name="profile" id="profile">
+                        <span id="alertProfile">Este campo es obligatorio</span>
+                    </div>
+                    <div id="inputEmail">
+                        <label for="email">Email<span class="obligatory">*</span></label>
+                        <input type="email" name="email" id="email">
+                        <span id="alertEmail">Correo duplicado</span>
+                    </div>
+                    <div id="selectCompany">
+                        <label for="companyOptions">Compañía<span class="obligatory">*</span></label>
+                        <div id="companyOption">
+                            <span class="icon-caret-down" id="caretSelectCompany"></span>
+                            <select name="company" id="companyOptions">
+                                
+                            </select>
+                        </div>
+                        <span id="alertCompany">Este campo es obligatorio</span>
+                    </div>
+                </div>
+                
+
+                <div id="secondaryInfoContact">
+                    <div id="selectRegion" class="selectSecondaryInfo">
+                        <label for="regionOptions" class="labelSelect">Región</label>
+                        <div id="regionOption" class="selectOption">
+                            <span class="icon-caret-down" id="caretSelectRegion"></span>
+                            <select name="region" id="regionOptions">
+                                
+                            </select>
+                        </div>
+                    </div>
+                    <div id="selectCountry" class="selectSecondaryInfo">
+                        <label for="countryOptions" class="labelSelect">País</label>
+                        <div id="countryOption" class="selectOption">
+                            <span class="icon-caret-down" id="caretSelectCountry"></span>
+                            <select name="country" id="countryOptions">
+                                <option class="companyToSelect" value="0">Seleccionar país</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="selectCity" class="selectSecondaryInfo">
+                        <label for="cityOptions" class="labelSelect">Ciudad</label>
+                        <div id="cityOption" class="selectOption">
+                            <span class="icon-caret-down" id="caretSelectCity"></span>
+                            <select name="city" id="cityOptions" size="">
+                                <option class="companyToSelect" value="0">Seleccionar Ciudad</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="inputAddress" class="inputSecondary">
+                        <label for="addressContact" class="labelInput">Dirección</label>
+                        <input type="text" name="addressContact" id="addressContact" placeholder="Ingresa una dirección" class="inputPerSe" disabled>
+                    </div>
+                    <div id="interestSection">
+                        <label for="selectInterest">Interés</label>
+                        <div id="interestRepresentation">
+                            <div id="horizontalBar">
+                                <div id="circleSelection"></div>
+                                <div class="specificPercentajeColor" id="twentyFive"></div>
+                                <div class="specificPercentajeColor" id="fifty"></div>
+                                <div class="specificPercentajeColor" id="seventyFive"></div>
+                                <div class="specificPercentajeColor" id="oneHundred"></div>
+                            </div>
+                            <div id="interestPercentage">
+                                <span class="icon-caret-down" id="caretSelectInterest"></span>
+                                <select id="selectInterest">
+                                    <option value="0%" selected id="HOLA">0%</option>
+                                    <option value="25%">25%</option>
+                                    <option value="50%">50%</option>
+                                    <option value="75%">75%</option>
+                                    <option value="100%">100%</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="channelsInfoContact">
+                    <div id="specificChannelContact">
+                        <span id="titleChannel">Canal de contacto</span>
+                        <span>Teléfono</span>
+                        <span>Whatsapp</span>
+                        <span>Facebook</span>
+                        <span>Instagram</span>
+                        <span>Linkedin</span>
+                    </div>
+                    <div id="dataChannel">
+                        <span id="titleDataChannel">Cuenta de usuario</span>
+                        <div id="inputTelephone" class="inputSecondary">
+                            <input type="text" name="telephoneContact" id="telephoneContact" placeholder="263 64 02 (ejemplo)" class="inputPerSe" disabled>
+                            <span id="alertTelephoneData">Este campo es obligatorio</span>
+                        </div>
+                        <div id="inputWhatsapp" class="inputSecondary">
+                            <input type="text" name="whatsappContact" id="whatsappContact" placeholder="0333 4890 2998 (ejemplo)" class="inputPerSe" disabled>
+                            <span id="alertWhatsappData">Este campo es obligatorio</span>
+                        </div>
+                        <div id="inputFacebook" class="inputSecondary">
+                            <input type="text" name="facebookContact" id="facebookContact" placeholder="@ejemplo" class="inputPerSe" disabled>
+                            <span id="alertFacebookData">Este campo es obligatorio</span>
+                        </div>
+                        <div id="inputInstagram" class="inputSecondary">
+                            <input type="text" name="instagramContact" id="instagramContact" placeholder="@ejemplo" class="inputPerSe" disabled>
+                            <span id="alertInstagramData">Este campo es obligatorio</span>
+                        </div>
+                        <div id="inputLinkedin" class="inputSecondary">
+                            <input type="text" name="linkedinContact" id="linkedinContact" placeholder="@ejemplo" class="inputPerSe" disabled>
+                            <span id="alertLinkedinData">Este campo es obligatorio</span>
+                        </div>
+                    </div>
+                    <div id="preferenceChannel">
+                        <span id="titlePreferenceChannel">Preferencias</span>
+                        <div id="selectTelephonePreference" class="selectChannelPreference">
+                            <span class="preferenceSymbol icon-heart"></span>
+                            <span class="arrowSelectPreference icon-caret-down"></span>
+                            <select id="telephonePreference">
+                                <option value="Sin preferencia" selected>Sin preferencia</option>
+                                <option value="Canal favorito">Canal favorito</option>
+                                <option value="No molestar">No molestar</option>
+                            </select>
+                        </div>
+                        <div id="selectWhatsappPreference" class="selectChannelPreference">
+                            <span class="preferenceSymbol icon-heart"></span>
+                            <span class="arrowSelectPreference icon-caret-down"></span>
+                            <select id="whatsappPreference">
+                                <option value="Sin preferencia" selected>Sin preferencia</option>
+                                <option value="Canal favorito">Canal favorito</option>
+                                <option value="No molestar">No molestar</option>
+                            </select>
+                        </div>
+                        <div id="selectFacebookPreference" class="selectChannelPreference">
+                            <span class="preferenceSymbol icon-heart"></span>
+                            <span class="arrowSelectPreference icon-caret-down"></span>
+                            <select id="FacebookPreference">
+                                <option value="Sin preferencia" selected>Sin preferencia</option>
+                                <option value="Canal favorito">Canal favorito</option>
+                                <option value="No molestar">No molestar</option>
+                            </select>
+                        </div>
+                        <div id="selectInstagramPreference" class="selectChannelPreference">
+                            <span class="preferenceSymbol icon-heart"></span>
+                            <span class="arrowSelectPreference icon-caret-down"></span>
+                            <select id="instagramPreference">
+                                <option value="Sin preferencia" selected>Sin preferencia</option>
+                                <option value="Canal favorito">Canal favorito</option>
+                                <option value="No molestar">No molestar</option>
+                            </select>
+                        </div>
+                        <div id="selectLinkedinPreference" class="selectChannelPreference">
+                            <span class="preferenceSymbol icon-heart"></span>
+                            <span class="arrowSelectPreference icon-caret-down"></span>
+                            <select id="linkedinPreference">
+                                <option value="Sin preferencia" selected>Sin preferencia</option>
+                                <option value="Canal favorito">Canal favorito</option>
+                                <option value="No molestar">No molestar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="buttonEditSection">
+                        <button id="editTelephone"><span class="icon-edit-pencil"></span>Editar canal</button>
+                        <button id="editWhastapp"><span class="icon-edit-pencil"></span>Editar canal</button>
+                        <button id="editFacebook"><span class="icon-edit-pencil"></span>Editar canal</button>
+                        <button id="editInstagram"><span class="icon-edit-pencil"></span>Editar canal</button>
+                        <button id="editLinkedin"><span class="icon-edit-pencil"></span>Editar canal</button>
+                    </div>
+                </div>
+
+                <div id="buttonsFinalForm">
+                    <button id="deleteContactForm">Cancelar</button>
+                    <button id="createEditContact">Guardar contacto</button>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <script src="//cdn.datatables.net/1.11.0/js/jquery.dataTables.min.js"></script>
+    <script src="../JS/validationProfile.js"></script>
+    <script src="../JS/contacts.js"></script>
+</body>
+</html>

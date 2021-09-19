@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Compañias</title>
+    <link rel="stylesheet" href="../styles/companies.css">
+    <link rel="stylesheet" href="../styles/fonts.css">
+</head>
+<body>
+    <section id="errorLoginPage">
+        <span id="errorLogin">Código de error: 401</span>
+        <p id="messageErrorLogin">Usted no se encuentra autentificado, por favor ingrese al siguiente link: <a href="../index.html" id="loginPage">datawarehouse.com</a> y autentifíquese.</p>
+    </section>
+    <section id="loginApproved">
+        <header>
+            <a href="../index.html" id="mainPage">
+                <img src="../images/logo.svg" alt="Logo">
+            </a>
+            <div id="pages">
+                <a href="./contacts.html" id="contactsPage" class="pagesDataWarehouse">Contactos</a>
+                <a href="" id="companiesPage" class="pagesDataWarehouse">Compañías</a>
+                <a href="./users.html" id="usersPage" class="pagesDataWarehouse">Usuarios</a>
+                <a href="./location.html" id="locationsPage" class="pagesDataWarehouse">Región / Ciudad</a>
+            </div>
+        </header>
+
+
+        <div id="modalForm">
+            <div id="formCreateCompany">
+                <span id="closeForm">&times;</span>
+                <h2 id="titleForm">Agregar compañía</h2>
+                <div class="inputData">
+                    <label for="company">Compañía</label><span class="obligatory">*</span>
+                    <input type="text" name="company" id="company">
+                </div>
+                <span id="companyAlreadyExist">La compañía ya existe, por favor intente con otra compañía.</span>
+                <div class="inputData">
+                    <label for="email">Email</label><span class="obligatory">*</span>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="inputData">
+                    <label for="phone">Teléfono</label><span class="obligatory">*</span>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                <div class="inputData">
+                    <span class="placeLabel">Región</span><span class="obligatory">*</span>
+                </div>
+                <div id="selectRegion">
+                    <span class="initDropDownValue" id="regionZero">Seleccionar región</span>
+                    <span id="caretRegion" class="icon-caret-down"></span>
+                    <div class="dropDownSize">
+                        <div class="dropDownData" id="regionsData">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="inputData">
+                    <span class="placeLabel">País</span><span class="obligatory">*</span>
+                </div>
+                <div id="selectCountry">
+                    <span class="initDropDownValue" id="countryZero">Seleccionar país</span>
+                    <span id="caretCountry" class="icon-caret-down"></span>
+                    <div class="dropDownSize">
+                        <div class="dropDownData" id="countriesData">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="inputData">
+                    <span class="placeLabel">Ciudad</span><span class="obligatory">*</span>
+                </div>
+                <div id="selectCity">
+                    <span class="initDropDownValue" id="cityZero">Seleccionar ciudad</span>
+                    <span id="caretCity" class="icon-caret-down"></span>
+                    <div class="dropDownSize">
+                        <div class="dropDownData" id="citiesData">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="inputData">
+                    <label for="address">Dirección</label><span class="obligatory">*</span>
+                    <input type="text" name="address" id="address" disabled>
+                </div>
+                <span id="alertIncompleteInformation">Todos los campos con * deben estar diligenciados.</span>
+                <button id="createUpdateCompany">Agregar</button>
+            </div>
+        </div>
+
+
+        <div id="modalAlertDeleteCompany">
+            <div id="alertBeforeDelete">
+                <img src="../images/deleteCompany.jpg" alt="Delete alert">
+                <p id="companyDelete"></p>
+                <div id="buttonsDeleteAlert">
+                    <button id="cancelDelete">Cancelar</button>
+                    <button id="deleteDone">Eliminar</button>
+                </div>
+            </div>
+        </div>
+        <section id="titleCompanies">
+            <h1>Compañías</h1>
+            <button id="newCompany">Agregar compañía</button>
+        </section>
+        <section id="tableCompany">
+            <table id="mainTable">
+                <thead>
+                    <tr>
+                        <th scope = "col">Nombre</th>
+                        <th scope = "col">País</th>
+                        <th scope = "col">Dirección</th>
+                        <th scope = "col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+    <script src="../JS/validationProfile.js"></script>
+    <script src="../JS/companies.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* Inicializar/Formatear estilos en HTML */
+* {
+    overflow-x: hidden;
+    body {
+        box-sizing: border-box;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        button {
+            border: none;
+        }
+        li {
+            list-style: none;
+        }
+    }
+}
+/* ---------------------------------------------------- */

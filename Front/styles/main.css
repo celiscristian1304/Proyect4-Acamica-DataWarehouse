@@ -1,0 +1,114 @@
+/* Inicializar/Formatear estilos en HTML */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  overflow-x: hidden;
+}
+
+* body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+* body a {
+  text-decoration: none;
+  color: black;
+}
+
+* body button {
+  border: none;
+}
+
+* body li {
+  list-style: none;
+}
+
+/* ---------------------------------------------------- */
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 64px;
+  background-color: #1D72C2;
+}
+
+header a {
+  margin: 0 0 0 2.19%;
+}
+
+header a img {
+  width: 50px;
+}
+
+#sectionLogin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 150px 0 0 0;
+}
+
+#sectionLogin #boxLogin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: solid 1px #1D72C2;
+}
+
+#sectionLogin #boxLogin h1, #sectionLogin #boxLogin #user, #sectionLogin #boxLogin #password, #sectionLogin #boxLogin button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#sectionLogin #boxLogin input, #sectionLogin #boxLogin button {
+  font-size: 21.7px;
+}
+
+#sectionLogin #boxLogin h1 {
+  font-weight: bold;
+  font-size: 29px;
+  text-transform: capitalize;
+  margin: 25px 200px;
+  color: #1D72C2;
+}
+
+#sectionLogin #boxLogin input {
+  margin: 25px 0;
+  text-align: center;
+  border-color: #1D72C2;
+  color: #1D72C2;
+  /* background-color: rgba(255, 0, 0, 0.25); */
+}
+
+#sectionLogin #boxLogin input:focus {
+  outline: none;
+}
+
+#sectionLogin #boxLogin p {
+  margin: 0 0 25px 0;
+  font: 300 20.1px 'Open Sans', sans-serif;
+  color: red;
+  visibility: hidden;
+}
+
+#sectionLogin #boxLogin button {
+  padding: 10px 25px;
+  margin: 0 0 35px 0;
+  cursor: pointer;
+  background-color: #1D72C2;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=main.css.map */

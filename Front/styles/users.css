@@ -1,0 +1,436 @@
+/* Inicializar/Formatear estilos en HTML */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  overflow-x: hidden;
+}
+
+* body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+* body a {
+  text-decoration: none;
+  color: black;
+}
+
+* body button {
+  border: none;
+}
+
+* body li {
+  list-style: none;
+}
+
+/* ---------------------------------------------------- */
+#errorLoginPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 350px 0 0 0;
+  height: 0px;
+}
+
+#errorLoginPage #errorLogin {
+  font: 900 50px 'Open Sans', sans-serif;
+}
+
+#errorLoginPage #messageErrorLogin {
+  font: 300 20px 'Open Sans', sans-serif;
+}
+
+#errorLoginPage #messageErrorLogin #loginPage {
+  text-decoration: underline;
+  color: blue;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 64px;
+  background-color: #1D72C2;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header #mainPage {
+  margin: 0 0 0 2.19%;
+}
+
+header #mainPage img {
+  width: 50px;
+}
+
+header #pages {
+  width: 400.2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 64px;
+  margin: 0 2.19% 0 0;
+}
+
+header #pages .pagesDataWarehouse {
+  color: #FFFFFF;
+  font: 300 14.7px 'Open Sans', sans-serif;
+}
+
+header #pages .pagesDataWarehouse:hover {
+  font-weight: 600;
+}
+
+#modalAlertDeleteUser {
+  /* display: flex; */
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#modalAlertDeleteUser #alertBeforeDelete {
+  width: 339px;
+  height: 303px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF;
+  margin: 233px 0 0 0;
+}
+
+#modalAlertDeleteUser #alertBeforeDelete img {
+  width: 88px;
+  height: 104.4px;
+  margin: 16.2px 0 0 0;
+}
+
+#modalAlertDeleteUser #alertBeforeDelete p {
+  margin: 42.8px 0 0 0;
+  font: 300 13px 'Open Sans', sans-serif;
+  max-width: 275.3px;
+  text-align: center;
+}
+
+#modalAlertDeleteUser #alertBeforeDelete #buttonsDeleteAlert {
+  margin: 43.3px 0 0 0;
+}
+
+#modalAlertDeleteUser #alertBeforeDelete #buttonsDeleteAlert button {
+  font: 300 13px 'Open Sans', sans-serif;
+  width: 130.5px;
+  height: 41.5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#modalAlertDeleteUser #alertBeforeDelete #buttonsDeleteAlert button:hover {
+  width: 132.5px;
+  height: 43.5px;
+}
+
+#modalAlertDeleteUser #alertBeforeDelete #buttonsDeleteAlert #cancelDelete {
+  margin-right: 12.25px;
+  background-color: #FFFFFF;
+  color: #0683F9;
+  border: solid 1px #0683F9;
+}
+
+#modalAlertDeleteUser #alertBeforeDelete #buttonsDeleteAlert #deleteDone {
+  margin-left: 12.25px;
+  background-color: #F03738;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+header #pages {
+  /* The following code lines underline the words with a specific length and position */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background-image: linear-gradient(white, white);
+  background-position: left 60.5% bottom;
+  background-size: 15% 3px;
+  background-repeat: no-repeat;
+  /* ------------------------------------------------------------------------------ */
+}
+
+header #pages #usersPage {
+  font-weight: 600;
+}
+
+#modalForm {
+  /* display: flex; */
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#modalForm #formCreateUser {
+  width: 600px;
+  background-color: #FFFFFF;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 30px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#modalForm #formCreateUser #closeForm {
+  color: red;
+  font: 900 29px 'Open Sans', sans-serif;
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 20px 50px 0 0;
+}
+
+#modalForm #formCreateUser h2 {
+  font: 900 29px 'Open Sans', sans-serif;
+  color: #1D72C2;
+  margin: 0 0 30px 0;
+}
+
+#modalForm #formCreateUser .inputData {
+  width: 100%;
+  /* display: flex;
+            justify-content: space-around; */
+  position: relative;
+  height: 65px;
+}
+
+#modalForm #formCreateUser .inputData input, #modalForm #formCreateUser .inputData label, #modalForm #formCreateUser .inputData span {
+  font: 300 21.7px 'Open Sans', sans-serif;
+}
+
+#modalForm #formCreateUser .inputData span {
+  color: red;
+}
+
+#modalForm #formCreateUser .inputData input, #modalForm #formCreateUser .inputData label {
+  color: #1D72C2;
+}
+
+#modalForm #formCreateUser .inputData input {
+  position: absolute;
+  right: 100px;
+}
+
+#modalForm #formCreateUser .inputData label {
+  margin: 0 0 0 110px;
+}
+
+#modalForm #formCreateUser .inputData #repeatPass {
+  margin: 0 0 0 40px;
+}
+
+#modalForm #formCreateUser #userAlreadyExist {
+  margin: -30px 0 15px 0;
+}
+
+#modalForm #formCreateUser #passwordEqualValidation {
+  margin: -15px 0 15px 0;
+}
+
+#modalForm #formCreateUser #rol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#modalForm #formCreateUser #rol span {
+  margin: 0 0 15px 0;
+  font: 300 21.7px 'Open Sans', sans-serif;
+  color: #1D72C2;
+  text-decoration: underline;
+}
+
+#modalForm #formCreateUser #rol #rolOption {
+  margin: 0 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#modalForm #formCreateUser #rol #rolOption label {
+  font: 300 21.7px 'Open Sans', sans-serif;
+  color: #1D72C2;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+#modalForm #formCreateUser #rol #rolOption input {
+  cursor: pointer;
+}
+
+#modalForm #formCreateUser #createUpdateUser {
+  font: 600 21.7px 'Open Sans', sans-serif;
+  padding: 10px 25px;
+  margin: 10px 0 35px 0;
+  cursor: pointer;
+  background-color: #429C41;
+  color: #FFFFFF;
+}
+
+#modalForm #formCreateUser #userAlreadyExist, #modalForm #formCreateUser #passwordEqualValidation, #modalForm #formCreateUser #alertIncompleteInformation {
+  color: red;
+  font: 300 13px 'Open Sans', sans-serif;
+  font-style: oblique;
+  display: none;
+}
+
+#titleUsers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0 0 0;
+}
+
+#titleUsers h1, #titleUsers button {
+  margin: 0 5%;
+}
+
+#titleUsers h1 {
+  font: 900 29px 'Open Sans', sans-serif;
+}
+
+#titleUsers button {
+  font: 600 21.7px 'Open Sans', sans-serif;
+  padding: 10px 25px;
+  cursor: pointer;
+  background-color: #1D72C2;
+  color: #FFFFFF;
+}
+
+#tableUser {
+  margin: 40px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#tableUser #mainTable {
+  width: 90%;
+  /* Remove the space between cells */
+  border-collapse: collapse;
+}
+
+#tableUser #mainTable thead tr {
+  background-color: #1D72C2;
+}
+
+#tableUser #mainTable thead tr th {
+  font: 300 20px 'Open Sans', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  color: #FFFFFF;
+  padding: 10px 0;
+  border: solid 1px #FFFFFF;
+}
+
+#tableUser #mainTable thead tr th:nth-child(1) {
+  border-left: none;
+}
+
+#tableUser #mainTable thead tr th:nth-child(7) {
+  border-right: none;
+}
+
+#tableUser #mainTable tbody th, #tableUser #mainTable tbody td {
+  font: 300 20px 'Open Sans', sans-serif;
+  color: #1D72C2;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px 0;
+  border: solid 1px #1D72C2;
+}
+
+#tableUser #mainTable tbody th {
+  font-weight: 600;
+}
+
+#tableUser #mainTable tbody td .icon-edit-pencil {
+  margin-right: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #E8E8E8;
+}
+
+#tableUser #mainTable tbody td .icon-edit-pencil:hover {
+  color: #1D72C2;
+}
+
+#tableUser #mainTable tbody td .icon-delete {
+  font-size: 19px;
+  cursor: pointer;
+  color: #E8E8E8;
+}
+
+#tableUser #mainTable tbody td .icon-delete:hover {
+  color: #DE0028;
+}
+/*# sourceMappingURL=users.css.map */

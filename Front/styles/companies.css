@@ -1,0 +1,459 @@
+/* Inicializar/Formatear estilos en HTML */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  overflow-x: hidden;
+}
+
+* body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+* body a {
+  text-decoration: none;
+  color: black;
+}
+
+* body button {
+  border: none;
+}
+
+* body li {
+  list-style: none;
+}
+
+/* ---------------------------------------------------- */
+#errorLoginPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 350px 0 0 0;
+  height: 0px;
+}
+
+#errorLoginPage #errorLogin {
+  font: 900 50px 'Open Sans', sans-serif;
+}
+
+#errorLoginPage #messageErrorLogin {
+  font: 300 20px 'Open Sans', sans-serif;
+}
+
+#errorLoginPage #messageErrorLogin #loginPage {
+  text-decoration: underline;
+  color: blue;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 64px;
+  background-color: #1D72C2;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header #mainPage {
+  margin: 0 0 0 2.19%;
+}
+
+header #mainPage img {
+  width: 50px;
+}
+
+header #pages {
+  width: 400.2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 64px;
+  margin: 0 2.19% 0 0;
+}
+
+header #pages .pagesDataWarehouse {
+  color: #FFFFFF;
+  font: 300 14.7px 'Open Sans', sans-serif;
+}
+
+header #pages .pagesDataWarehouse:hover {
+  font-weight: 600;
+}
+
+header #pages {
+  /* The following code lines underline the words with a specific length and position */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background-image: linear-gradient(white, white);
+  background-size: 19% 3px;
+  background-repeat: no-repeat;
+  /* ------------------------------------------------------------------------------ */
+}
+
+header #pages #companiesPage {
+  font-weight: 600;
+}
+
+#modalForm {
+  /* display: flex; */
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#modalForm #formCreateCompany {
+  position: relative;
+  width: 600px;
+  background-color: #FFFFFF;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 30px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#modalForm #formCreateCompany #closeForm {
+  color: red;
+  font: 900 29px 'Open Sans', sans-serif;
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 20px 50px 0 0;
+}
+
+#modalForm #formCreateCompany h2 {
+  font: 900 29px 'Open Sans', sans-serif;
+  color: #1D72C2;
+  margin: 0 0 30px 0;
+}
+
+#modalForm #formCreateCompany .inputData {
+  width: 100%;
+  /* display: flex;
+            justify-content: space-around; */
+  position: relative;
+  height: 65px;
+}
+
+#modalForm #formCreateCompany .inputData input, #modalForm #formCreateCompany .inputData label, #modalForm #formCreateCompany .inputData span {
+  font: 300 21.7px 'Open Sans', sans-serif;
+}
+
+#modalForm #formCreateCompany .inputData span {
+  color: red;
+}
+
+#modalForm #formCreateCompany .inputData input, #modalForm #formCreateCompany .inputData label, #modalForm #formCreateCompany .inputData .placeLabel {
+  color: #1D72C2;
+}
+
+#modalForm #formCreateCompany .inputData input {
+  position: absolute;
+  right: 100px;
+}
+
+#modalForm #formCreateCompany .inputData label, #modalForm #formCreateCompany .inputData .placeLabel {
+  margin: 0 0 0 110px;
+}
+
+#modalForm #formCreateCompany .initDropDownValue {
+  font: 300 18px 'Open Sans', sans-serif;
+  margin: 0 0 0 15px;
+  color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#modalForm #formCreateCompany .valueSelectedDropDown {
+  font: 300 18px 'Open Sans', sans-serif;
+  margin: 0 0 0 15px;
+  color: #1D72C2;
+  cursor: pointer;
+}
+
+#modalForm #formCreateCompany .icon-caret-down, #modalForm #formCreateCompany .icon-caret-up {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: #000000;
+  cursor: pointer;
+}
+
+#modalForm #formCreateCompany .dropDownSize {
+  z-index: 1;
+  position: relative;
+  background-color: #FFFFFF;
+  max-height: 100px;
+}
+
+#modalForm #formCreateCompany .dropDownSize .dropDownData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#modalForm #formCreateCompany .dropDownSize .dropDownData span {
+  color: #1D72C2;
+  font: 300 18px 'Open Sans', sans-serif;
+  margin: 0 0 0 15px;
+  cursor: pointer;
+}
+
+#modalForm #formCreateCompany #selectRegion, #modalForm #formCreateCompany #selectCountry, #modalForm #formCreateCompany #selectCity {
+  position: absolute;
+  padding: 1px 2px;
+  right: 95px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 255px;
+}
+
+#modalForm #formCreateCompany #selectRegion {
+  top: 322px;
+}
+
+#modalForm #formCreateCompany #selectCountry {
+  top: 387px;
+  background-color: #E8E8e8;
+}
+
+#modalForm #formCreateCompany #selectCity {
+  top: 450px;
+  background-color: #E8E8e8;
+  z-index: 1;
+}
+
+#modalForm #formCreateCompany #companyAlreadyExist {
+  margin: -30px 0 15px 0;
+}
+
+#modalForm #formCreateCompany #createUpdateCompany {
+  font: 600 21.7px 'Open Sans', sans-serif;
+  padding: 10px 25px;
+  margin: 10px 0 35px 0;
+  cursor: pointer;
+  background-color: #429C41;
+  color: #FFFFFF;
+}
+
+#modalForm #formCreateCompany #companyAlreadyExist, #modalForm #formCreateCompany #alertIncompleteInformation {
+  color: red;
+  font: 300 13px 'Open Sans', sans-serif;
+  font-style: oblique;
+  display: none;
+}
+
+#modalAlertDeleteCompany {
+  /* display: flex; */
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#modalAlertDeleteCompany #alertBeforeDelete {
+  width: 339px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF;
+  margin: 233px 0 0 0;
+}
+
+#modalAlertDeleteCompany #alertBeforeDelete img {
+  width: 88px;
+  height: 104.4px;
+  margin: 16.2px 0 0 0;
+}
+
+#modalAlertDeleteCompany #alertBeforeDelete p {
+  margin: 42.8px 0 0 0;
+  font: 300 13px 'Open Sans', sans-serif;
+  max-width: 275.3px;
+  text-align: center;
+}
+
+#modalAlertDeleteCompany #alertBeforeDelete #buttonsDeleteAlert {
+  margin: 43.3px 0 54.88px 0;
+}
+
+#modalAlertDeleteCompany #alertBeforeDelete #buttonsDeleteAlert button {
+  font: 300 13px 'Open Sans', sans-serif;
+  width: 130.5px;
+  height: 41.5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#modalAlertDeleteCompany #alertBeforeDelete #buttonsDeleteAlert button:hover {
+  width: 132.5px;
+  height: 43.5px;
+}
+
+#modalAlertDeleteCompany #alertBeforeDelete #buttonsDeleteAlert #cancelDelete {
+  margin-right: 12.25px;
+  background-color: #FFFFFF;
+  color: #0683F9;
+  border: solid 1px #0683F9;
+}
+
+#modalAlertDeleteCompany #alertBeforeDelete #buttonsDeleteAlert #deleteDone {
+  margin-left: 12.25px;
+  background-color: #F03738;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+#titleCompanies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0 0 0;
+}
+
+#titleCompanies h1, #titleCompanies button {
+  margin: 0 5%;
+}
+
+#titleCompanies h1 {
+  font: 900 29px 'Open Sans', sans-serif;
+}
+
+#titleCompanies button {
+  font: 600 21.7px 'Open Sans', sans-serif;
+  padding: 10px 25px;
+  cursor: pointer;
+  background-color: #1D72C2;
+  color: #FFFFFF;
+}
+
+#tableCompany {
+  margin: 40px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#tableCompany #mainTable {
+  width: 90%;
+  /* Remove the space between cells */
+  border-collapse: collapse;
+}
+
+#tableCompany #mainTable thead tr {
+  background-color: #1D72C2;
+}
+
+#tableCompany #mainTable thead tr th {
+  font: 300 20px 'Open Sans', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  color: #FFFFFF;
+  padding: 10px 0;
+  border: solid 1px #FFFFFF;
+}
+
+#tableCompany #mainTable thead tr th:nth-child(1) {
+  border-left: none;
+}
+
+#tableCompany #mainTable thead tr th:nth-child(7) {
+  border-right: none;
+}
+
+#tableCompany #mainTable tbody th, #tableCompany #mainTable tbody td {
+  font: 300 20px 'Open Sans', sans-serif;
+  color: #1D72C2;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px 0;
+  border: solid 1px #1D72C2;
+}
+
+#tableCompany #mainTable tbody th {
+  font-weight: 600;
+}
+
+#tableCompany #mainTable tbody td .icon-edit-pencil {
+  margin-right: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #E8E8E8;
+}
+
+#tableCompany #mainTable tbody td .icon-edit-pencil:hover {
+  color: #1D72C2;
+}
+
+#tableCompany #mainTable tbody td .icon-delete {
+  font-size: 19px;
+  cursor: pointer;
+  color: #E8E8E8;
+}
+
+#tableCompany #mainTable tbody td .icon-delete:hover {
+  color: #DE0028;
+}
+/*# sourceMappingURL=companies.css.map */

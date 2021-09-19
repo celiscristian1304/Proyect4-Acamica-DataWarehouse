@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="../styles/users.css">
+    <link rel="stylesheet" href="../styles/fonts.css">
+</head>
+<body>
+    <section id="errorLoginPage">
+        <span id="errorLogin">Código de error: 401</span>
+        <p id="messageErrorLogin">Usted no se encuentra autentificado, por favor ingrese al siguiente link: <a href="../index.html" id="loginPage">datawarehouse.com</a> y autentifíquese.</p>
+    </section>
+    <section id="loginApproved">
+        <header>
+            <a href="../index.html" id="mainPage">
+                <img src="../images/logo.svg" alt="Logo">
+            </a>
+            <div id="pages">
+                <a href="./contacts.html" id="contactsPage" class="pagesDataWarehouse">Contactos</a>
+                <a href="./companies.html" id="companiesPage" class="pagesDataWarehouse">Compañías</a>
+                <a href="" id="usersPage" class="pagesDataWarehouse">Usuarios</a>
+                <a href="./location.html" id="locationsPage" class="pagesDataWarehouse">Región / Ciudad</a>
+            </div>
+        </header>
+        <div id="modalForm">
+            <div id="formCreateUser">
+                <span id="closeForm">&times;</span>
+                <h2 id="titleForm">Crear usuario</h2>
+                <div class="inputData">
+                    <label for="user">Usuario</label><span class="obligatory">*</span>
+                    <input type="text" name="user" id="user">
+                </div>
+                <span id="userAlreadyExist">El usuario ya existe, por favor intente con otro usuario.</span>
+                <div class="inputData">
+                    <label for="name">Nombre</label><span class="obligatory">*</span>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="inputData">
+                    <label for="lastName">Apellido</label><span class="obligatory">*</span>
+                    <input type="text" name="lastName" id="lastName">
+                </div>
+                <div class="inputData">
+                    <label for="email">Email</label><span class="obligatory">*</span>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="inputData">
+                    <label for="profile">Perfil</label><span class="obligatory">*</span>
+                    <input type="text" name="profile" id="profile">
+                </div>
+                <div id="rol">
+                    <span id="rolTitle">Rol</span>
+                    <div id="rolOption">
+                        <input type="radio" id="basicUser" name="rol" value="basic" checked>
+                        <label for="basicUser">Básico</label>
+                        <input type="radio" id="adminUser" name="rol" value="admin">
+                        <label for="adminUser">Administrador</label>
+                    </div>
+                </div>
+                <div class="inputData">
+                    <label for="firstPassword">Contraseña</label><span class="obligatory">*</span>
+                    <input type="password" name="firstPassword" id="firstPassword">
+                </div>
+                <span id="passwordEqualValidation">La contraseña no coincide. Por favor intentelo de nuevo.</span>
+                <div class="inputData">
+                    <label for="secondPassword" id="repeatPass">Repetir contraseña</label><span class="obligatory">*</span>
+                    <input type="password" name="secondPassword" id="secondPassword">
+                </div>
+                <span id="alertIncompleteInformation">Todos los campos con * deben estar diligenciados.</span>
+                <button id="createUpdateUser"></button>
+            </div>
+        </div>
+        <div id="modalAlertDeleteUser">
+            <div id="alertBeforeDelete">
+                <img src="../images/deleteAlert.jpg" alt="Delete alert">
+                <p id="userDelete"></p>
+                <div id="buttonsDeleteAlert">
+                    <button id="cancelDelete">Cancelar</button>
+                    <button id="deleteDone">Eliminar</button>
+                </div>
+            </div>
+        </div>
+        <section id="titleUsers">
+            <h1>Usuarios</h1>
+            <button id="newUser">Crear usuario</button>
+        </section>
+        <section id="tableUser">
+            <table id="mainTable">
+                <thead>
+                    <tr>
+                        <th scope = "col">Usuario</th>
+                        <th scope = "col">Nombre</th>
+                        <th scope = "col">Apellido</th>
+                        <th scope = "col">Email</th>
+                        <th scope = "col">Perfil</th>
+                        <th scope = "col">Rol</th>
+                        <th scope = "col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+    <script src="../JS/validationProfile.js"></script>
+    <script src="../JS/users.js"></script>
+</body>
+</html>

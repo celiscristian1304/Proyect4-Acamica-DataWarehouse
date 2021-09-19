@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Región - Ciudad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+    <link rel="stylesheet" href="../styles/location.css">
+    <link rel="stylesheet" href="../styles/fonts.css">
+</head>
+<body>
+    <section id="errorLoginPage">
+        <span id="errorLogin">Código de error: 401</span>
+        <p id="messageErrorLogin">Usted no se encuentra autentificado, por favor ingrese al siguiente link: <a href="../index.html" id="loginPage">datawarehouse.com</a> y autentifíquese.</p>
+    </section>
+    <section id="loginApproved">
+        <header>
+            <a href="../index.html" id="mainPage">
+                <img src="../images/logo.svg" alt="Logo">
+            </a>
+            <div id="pages">
+                <a href="./contacts.html" id="contactsPage" class="pagesDataWarehouse">Contactos</a>
+                <a href="./companies.html" id="companiesPage" class="pagesDataWarehouse">Compañías</a>
+                <a href="./users.html" id="usersPage" class="pagesDataWarehouse">Usuarios</a>
+                <a href="" id="locationsPage" class="pagesDataWarehouse">Región / Ciudad</a>
+            </div>
+        </header>
+        <div id="modalInputData">
+            <div id="inputDataPlace">
+                <span id="closeInputDataPlace">&times;</span>
+                <img src="../images/newPlace.png" alt="Delete alert">
+                <p id="dataPlace"></p>
+                <div id="inputPlace">
+                    <label for="placeText" id="place"></label><span class="obligatory">*</span>
+                    <input type="text" name="placeText" id="placeText">
+                </div>
+                <span id="wrongData"></span>
+                <button id="enterPlace">Agregar</button>
+            </div>
+        </div>
+        <div id="modalAlertDeleteUser">
+            <div id="alertBeforeDelete">
+                <img src="../images/deletePlace.png" alt="Delete alert">
+                <p id="userDelete"></p>
+                <div id="buttonsDeleteAlert">
+                    <button id="cancelDelete">Cancelar</button>
+                    <button id="deleteDone">Eliminar</button>
+                </div>
+            </div>
+        </div>
+        <section id="titleRegions">
+            <h1>Regiones/Países/Ciudades</h1>
+            <button id="add-region">Agregar región</button>
+        </section>
+        <section id="treeView">
+            <div id="jsTreeJquery">
+                
+            </div>
+        </section>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+    <script src="../JS/validationProfile.js"></script>
+    <script src="../JS/location.js"></script>
+</body>
+</html>

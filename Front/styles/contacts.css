@@ -1,0 +1,1048 @@
+/* Inicializar/Formatear estilos en HTML */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  overflow-x: hidden;
+}
+
+* body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+* body a {
+  text-decoration: none;
+  color: black;
+}
+
+* body button {
+  border: none;
+}
+
+* body li {
+  list-style: none;
+}
+
+/* ---------------------------------------------------- */
+#errorLoginPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 350px 0 0 0;
+  height: 0px;
+}
+
+#errorLoginPage #errorLogin {
+  font: 900 50px 'Open Sans', sans-serif;
+}
+
+#errorLoginPage #messageErrorLogin {
+  font: 300 20px 'Open Sans', sans-serif;
+}
+
+#errorLoginPage #messageErrorLogin #loginPage {
+  text-decoration: underline;
+  color: blue;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 64px;
+  background-color: #1D72C2;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header #mainPage {
+  margin: 0 0 0 2.19%;
+}
+
+header #mainPage img {
+  width: 50px;
+}
+
+header #pages {
+  width: 400.2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 64px;
+  margin: 0 2.19% 0 0;
+}
+
+header #pages .pagesDataWarehouse {
+  color: #FFFFFF;
+  font: 300 14.7px 'Open Sans', sans-serif;
+}
+
+header #pages .pagesDataWarehouse:hover {
+  font-weight: 600;
+}
+
+#modalAlertDeleteUser {
+  /* display: flex; */
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#modalAlertDeleteUser #alertBeforeDelete {
+  width: 339px;
+  height: 303px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF;
+  margin: 233px 0 0 0;
+}
+
+#modalAlertDeleteUser #alertBeforeDelete img {
+  width: 88px;
+  height: 104.4px;
+  margin: 16.2px 0 0 0;
+}
+
+#modalAlertDeleteUser #alertBeforeDelete p {
+  margin: 42.8px 0 0 0;
+  font: 300 13px 'Open Sans', sans-serif;
+  max-width: 275.3px;
+  text-align: center;
+}
+
+#modalAlertDeleteUser #alertBeforeDelete #buttonsDeleteAlert {
+  margin: 43.3px 0 0 0;
+}
+
+#modalAlertDeleteUser #alertBeforeDelete #buttonsDeleteAlert button {
+  font: 300 13px 'Open Sans', sans-serif;
+  width: 130.5px;
+  height: 41.5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#modalAlertDeleteUser #alertBeforeDelete #buttonsDeleteAlert button:hover {
+  width: 132.5px;
+  height: 43.5px;
+}
+
+#modalAlertDeleteUser #alertBeforeDelete #buttonsDeleteAlert #cancelDelete {
+  margin-right: 12.25px;
+  background-color: #FFFFFF;
+  color: #0683F9;
+  border: solid 1px #0683F9;
+}
+
+#modalAlertDeleteUser #alertBeforeDelete #buttonsDeleteAlert #deleteDone {
+  margin-left: 12.25px;
+  background-color: #F03738;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+header #pages {
+  /* The following code lines underline the words with a specific length and position */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background-image: linear-gradient(white, white);
+  background-position: left 0% bottom;
+  background-size: 17% 3px;
+  background-repeat: no-repeat;
+  /* ------------------------------------------------------------------------------ */
+}
+
+header #pages #contactsPage {
+  font-weight: 600;
+}
+
+h1 {
+  font: 900 17.6px 'Open Sans', sans-serif;
+  color: #000000;
+  margin: 39.6px 0 20.3px 29.4px;
+}
+
+#searchFilter {
+  margin: 0 0 0 540.5px;
+  width: 40px;
+  height: 40px;
+  color: #1D72C2;
+  font-size: 17.5px;
+  padding: 0;
+  border: rgba(0, 0, 0, 0.25) solid 1px;
+  background-color: #FFFFFF;
+  border-radius: 3.5px;
+  cursor: pointer;
+}
+
+#newContact {
+  font: 300 13.4px 'Open Sans', sans-serif;
+  position: absolute;
+  right: 0;
+  width: 173px;
+  height: 42px;
+  border-radius: 2px;
+  background-color: #1D72C2;
+  color: #FFFFFF;
+  margin: 0 28px 0 0;
+  cursor: pointer;
+}
+
+#containerSelectedInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 49.5px 0 4.5px 0;
+  visibility: hidden;
+}
+
+#containerSelectedInfo #contactsSelectedDone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95.9%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#containerSelectedInfo #contactsSelectedDone #tagInfoCountSelected {
+  font: 600 10px 'Open Sans', sans-serif;
+  background-color: rgba(37, 150, 190, 0.1);
+  color: #0683F9;
+  padding: 11.6px 10.7px 7.9px 10.7px;
+}
+
+#containerSelectedInfo #contactsSelectedDone #deleteAllContactsSelected {
+  background-color: #FFFFFF;
+  font: 300 10.8px 'Open Sans', sans-serif;
+  color: #1D72C2;
+  padding: 0;
+  cursor: pointer;
+}
+
+#containerSelectedInfo #contactsSelectedDone #deleteAllContactsSelected .icon-delete {
+  color: #1D72C2;
+  font-size: 15px;
+  margin: 0 9.7px 0 0;
+}
+
+/* Style fot contacts table -------------------------------------------------------------------------------------------- */
+#tableContacts {
+  width: 95.9%;
+  border: rgba(0, 0, 0, 0.1) solid 1px;
+  overflow: visible;
+}
+
+#tableContacts thead tr th {
+  font: 600 12.3px 'Open Sans', sans-serif;
+  text-align: left;
+  padding: 34.5px 0 22px 17px;
+  color: #000000;
+  border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+}
+
+#tableContacts thead tr th .order {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  display: inline-block;
+  position: absolute;
+}
+
+#tableContacts thead tr th:nth-child(1) {
+  font-size: 15px;
+  padding: 34.5px 13.5px 22px 13.5px;
+  text-align: center;
+}
+
+#tableContacts thead tr .icon-check_box_outline_blank {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#tableContacts thead tr .icon-indeterminate_check_box {
+  color: rgba(6, 131, 249, 0.5);
+}
+
+#tableContacts thead tr th:nth-child(7) {
+  text-align: center;
+  padding: 22px 0;
+}
+
+#tableContacts thead tr th:nth-child(6) {
+  max-width: 186px;
+}
+
+#tableContacts tbody tr .dataTables_empty {
+  font: 300 10px 'Open Sans', sans-serif;
+}
+
+#tableContacts tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#tableContacts tbody tr:hover .icon-delete {
+  display: initial;
+}
+
+#tableContacts tbody tr:hover .icon-edit-pencil {
+  display: initial;
+}
+
+#tableContacts tbody tr:hover .icon-more-horizontal {
+  display: none;
+}
+
+#tableContacts tbody tr td {
+  text-align: left;
+}
+
+#tableContacts tbody tr td .percentage {
+  width: 109.1px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #E8E8E8;
+  position: relative;
+}
+
+#tableContacts tbody tr td .percentage .progression {
+  height: inherit;
+  border-radius: 4px;
+  position: absolute;
+}
+
+#tableContacts tbody tr td .icon-delete, #tableContacts tbody tr td .icon-edit-pencil {
+  display: none;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+#tableContacts tbody tr td .icon-delete {
+  margin-right: 11.8px;
+}
+
+#tableContacts tbody tr td .icon-delete:hover {
+  color: #DE0028;
+}
+
+#tableContacts tbody tr td .icon-edit-pencil {
+  margin-left: 11.8px;
+}
+
+#tableContacts tbody tr td .icon-edit-pencil:hover {
+  color: #1D72C2;
+}
+
+#tableContacts tbody tr .morActions {
+  padding: 0;
+}
+
+#tableContacts tbody tr td:nth-child(1), #tableContacts tbody tr td:nth-child(7) {
+  text-align: center;
+}
+
+#tableContacts tbody tr td:nth-child(1) {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#tableContacts tbody tr .icon-check_box_outline_blank {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#tableContacts tbody tr .icon-check_box {
+  color: #0683F9;
+}
+
+#tableContacts tbody tr td:nth-child(4), #tableContacts tbody tr td:nth-child(5) {
+  font: 600 12.3px 'Open Sans', sans-serif;
+  padding-left: 17px;
+}
+
+#tableContacts tbody tr .contact {
+  padding: 16px 0 14.75px 19px;
+}
+
+#tableContacts tbody tr .regionCountry {
+  padding: 16px 0 14.75px 16px;
+}
+
+#tableContacts tbody tr .contact div:nth-child(1), #tableContacts tbody tr .regionCountry div:nth-child(1) {
+  font: 600 12.3px 'Open Sans', sans-serif;
+  color: #000000;
+}
+
+#tableContacts tbody tr .contact div:nth-child(2), #tableContacts tbody tr .regionCountry div:nth-child(2) {
+  font: 600 10px 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#tableContacts tbody tr .interest {
+  font: 600 12.3px 'Open Sans', sans-serif;
+  padding: 24.7px 19.9px 19px 17.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 186px;
+}
+
+.sorting .icon-arrows {
+  color: #E8E8E8;
+}
+
+.sorting_asc .icon-arrows, .sorting_desc .icon-arrows {
+  color: #1D72C2;
+}
+
+#tableContacts_wrapper {
+  overflow: unset;
+}
+
+/* Move the input search according to the request */
+.top #tableContacts_filter label input {
+  position: absolute;
+  width: 502px;
+  height: 41px;
+  left: 26px;
+  top: -127px;
+  overflow: none;
+  font: 300 12.5px 'Open Sans', sans-serif;
+  padding: 6.9px 13.5px 12.6px 13.5px;
+}
+
+/* Move elemnts below */
+.bottom {
+  position: relative;
+}
+
+.bottom #tableContacts_length {
+  position: absolute;
+  left: 29.2px;
+  top: 23.8px;
+}
+
+.bottom #tableContacts_length label {
+  font: 300 12.1px 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.bottom #tableContacts_length label select {
+  border: none;
+  padding: 0;
+  margin-left: 7px;
+  font: 300 12.1px 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.bottom #tableContacts_info {
+  position: absolute;
+  right: 136.6px;
+  top: 23.8px;
+  padding: 0;
+  font: 300 12.1px 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.bottom #tableContacts_paginate {
+  margin: 10px 29.2px 0 0;
+}
+
+.bottom #tableContacts_paginate a span {
+  font: 300 12.1px 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.bottom #tableContacts_paginate a:hover span {
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+footer {
+  width: 100%;
+  height: 70px;
+}
+
+/* Form style----------------------------------------------------------------------------------------------------------- */
+#modalFormContact {
+  /* display: flex; */
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#modalFormContact #dataContact {
+  width: 1215px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #FFFFFF;
+  position: relative;
+  margin: 96px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#modalFormContact #dataContact #backgroundColorTop {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 140px;
+  background-color: #1D72C2;
+}
+
+#modalFormContact #dataContact #formHeader {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1172px;
+  margin: 17px 0;
+}
+
+#modalFormContact #dataContact #formHeader h2, #modalFormContact #dataContact #formHeader span {
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+}
+
+#modalFormContact #dataContact #formHeader h2 {
+  font: 600 20px 'Open Sans', sans-serif;
+}
+
+#modalFormContact #dataContact #formHeader span {
+  font: 300 28px 'Open Sans', sans-serif;
+  cursor: pointer;
+}
+
+#modalFormContact #dataContact #mainInfoContact {
+  position: relative;
+  background-color: #FFFFFF;
+  width: 1172px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 6.5px;
+  border: 3px solid #0683F9;
+}
+
+#modalFormContact #dataContact #mainInfoContact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 34.4px 0 12.6px 0;
+}
+
+#modalFormContact #dataContact #mainInfoContact div label {
+  font: 600 13px 'Open Sans', sans-serif;
+  margin: 0 0 10.6px 0;
+}
+
+#modalFormContact #dataContact #mainInfoContact div label span {
+  color: #F03738;
+  visibility: visible;
+  font-style: normal;
+}
+
+#modalFormContact #dataContact #mainInfoContact div input {
+  font: 600 13px 'Open Sans', sans-serif;
+  width: 190px;
+  height: 35.5px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  padding: 0 9.2px;
+}
+
+#modalFormContact #dataContact #mainInfoContact div span {
+  font: 600 12px 'Open Sans', sans-serif;
+  font-style: italic;
+  color: #F03738;
+  margin: 11.7px 0 0 0;
+  /* visibility: hidden; */
+}
+
+#modalFormContact #dataContact #mainInfoContact #selectCompany #companyOption {
+  margin: 0;
+  width: 190px;
+}
+
+#modalFormContact #dataContact #mainInfoContact #selectCompany #companyOption #caretSelectCompany {
+  position: absolute;
+  right: 25px;
+  z-index: 1;
+  top: 75px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  visibility: visible;
+}
+
+#modalFormContact #dataContact #mainInfoContact #selectCompany #companyOption #companyOptions {
+  font: 300 11px 'Open Sans', sans-serif;
+  width: 190px;
+  min-height: 35.5px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  padding: 0 21px 0 9.2px;
+  position: absolute;
+  top: 63px;
+  visibility: visible;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+#modalFormContact #dataContact #mainInfoContact #selectCompany #companyOption #companyOptions option {
+  margin: 4px 0;
+  cursor: pointer;
+}
+
+#modalFormContact #dataContact #mainInfoContact #selectCompany #companyOption #companyOptions option:nth-child(1) {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#modalFormContact #dataContact #mainInfoContact #selectCompany #alertCompany {
+  position: absolute;
+  top: 100px;
+  width: 190px;
+}
+
+#modalFormContact #dataContact #secondaryInfoContact {
+  /* position: relative; */
+  width: 1146px;
+  margin: 35.3px 0 55px 0;
+  overflow: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#modalFormContact #dataContact #secondaryInfoContact .selectSecondaryInfo {
+  position: relative;
+  overflow: visible;
+}
+
+#modalFormContact #dataContact #secondaryInfoContact .selectSecondaryInfo .labelSelect {
+  font: 600 13px 'Open Sans', sans-serif;
+}
+
+#modalFormContact #dataContact #secondaryInfoContact .selectSecondaryInfo .labelSelect .obligatory {
+  color: #F03738;
+}
+
+#modalFormContact #dataContact #secondaryInfoContact .selectSecondaryInfo .selectOption {
+  position: relative;
+  overflow: visible;
+  width: 190px;
+}
+
+#modalFormContact #dataContact #secondaryInfoContact .selectSecondaryInfo .selectOption span {
+  position: absolute;
+  right: 15px;
+  z-index: 1;
+  top: 17.5px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#modalFormContact #dataContact #secondaryInfoContact .selectSecondaryInfo .selectOption select {
+  position: absolute;
+  top: 8.1px;
+  width: 100%;
+  height: 35.5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 6px;
+  border: 1px solid #C6CAcc;
+  font: 600 12.1px 'Open Sans', sans-serif;
+  padding: 0 8.6px;
+  cursor: pointer;
+}
+
+#modalFormContact #dataContact #secondaryInfoContact .selectSecondaryInfo .selectOption select option:nth-child(1) {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#modalFormContact #dataContact #secondaryInfoContact .selectSecondaryInfo .selectOption select option {
+  margin: 6px 0;
+}
+
+#modalFormContact #dataContact #secondaryInfoContact .selectSecondaryInfo .alertSelect {
+  font: 600 12px 'Open Sans', sans-serif;
+  font-style: italic;
+  color: #F03738;
+  position: absolute;
+  top: 67.4px;
+  width: 190px;
+  /* visibility: hidden; */
+}
+
+#modalFormContact #dataContact #secondaryInfoContact #interestSection {
+  width: 319.5px;
+  overflow: visible;
+}
+
+#modalFormContact #dataContact #secondaryInfoContact #interestSection label {
+  font: 600 13px 'Open Sans', sans-serif;
+}
+
+#modalFormContact #dataContact #secondaryInfoContact #interestSection #interestRepresentation {
+  overflow: visible;
+  margin: 10px 0 0 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#modalFormContact #dataContact #secondaryInfoContact #interestSection #interestRepresentation #horizontalBar {
+  width: 235px;
+  height: 13px;
+  position: relative;
+  overflow: visible;
+  background: #FFFFFF;
+  border: 1px solid #C6CACC;
+  border-radius: 3.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#modalFormContact #dataContact #secondaryInfoContact #interestSection #interestRepresentation #horizontalBar #circleSelection {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #C6CACC;
+  border-radius: 8rem;
+  position: absolute;
+  background-color: #FFFFFF;
+  top: -4px;
+  left: -5px;
+}
+
+#modalFormContact #dataContact #secondaryInfoContact #interestSection #interestRepresentation #horizontalBar .specificPercentajeColor {
+  width: 25%;
+  height: inherit;
+  cursor: pointer;
+}
+
+#modalFormContact #dataContact #secondaryInfoContact #interestSection #interestRepresentation #horizontalBar #twentyFive, #modalFormContact #dataContact #secondaryInfoContact #interestSection #interestRepresentation #horizontalBar #fifty, #modalFormContact #dataContact #secondaryInfoContact #interestSection #interestRepresentation #horizontalBar #seventyFive {
+  border-right: 1px solid #C6CACC;
+}
+
+#modalFormContact #dataContact #secondaryInfoContact #interestSection #interestRepresentation #interestPercentage {
+  position: relative;
+}
+
+#modalFormContact #dataContact #secondaryInfoContact #interestSection #interestRepresentation #interestPercentage #caretSelectInterest {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#modalFormContact #dataContact #secondaryInfoContact #interestSection #interestRepresentation #interestPercentage #selectInterest {
+  font: 600 13px 'Open Sans', sans-serif;
+  width: 70px;
+  height: 35px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 6px;
+  border: 1px solid #C6CAcc;
+  padding: 0 8.6px;
+  cursor: pointer;
+}
+
+#modalFormContact #dataContact .inputSecondary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#modalFormContact #dataContact .inputSecondary .labelInput {
+  font: 600 13px 'Open Sans', sans-serif;
+  margin: 0 0 10.1px 0;
+}
+
+#modalFormContact #dataContact .inputSecondary .inputPerSe {
+  width: 190px;
+  height: 34.8px;
+  border-radius: 6px;
+  border: 1px solid #C6CAcc;
+  padding: 0 8.6px;
+  color: #888888;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: not-allowed;
+}
+
+#modalFormContact #dataContact #channelsInfoContact {
+  width: 710px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 0 0 0 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #specificChannelContact, #modalFormContact #dataContact #channelsInfoContact #dataChannel {
+  font: 600 13px 'Open Sans', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #specificChannelContact {
+  /* font: 600 13px 'Open Sans', sans-serif;
+                width: 190px;
+                display: flex;
+                flex-direction: column; */
+}
+
+#modalFormContact #dataContact #channelsInfoContact #specificChannelContact #titleChannel {
+  margin: 0 0 10.9px 0;
+  width: 110px;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #specificChannelContact span:nth-child(2) {
+  margin: 14.4px 0 41.1px 9.2px;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #specificChannelContact span:nth-child(3), #modalFormContact #dataContact #channelsInfoContact #specificChannelContact span:nth-child(4), #modalFormContact #dataContact #channelsInfoContact #specificChannelContact span:nth-child(5) {
+  margin: 0 0 41.1px 9.2px;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #specificChannelContact span:nth-child(6) {
+  margin: 0 0 9.6px 9.2px;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #dataChannel {
+  margin: 0 0 10.9px 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #dataChannel #titleDataChannel {
+  margin: 0 0 5px 0;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #dataChannel div {
+  margin: 6px 0 0 0;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #dataChannel div span {
+  font: 600 12px 'Open Sans', sans-serif;
+  font-style: italic;
+  color: #F03738;
+  margin: 1px 0 0 0;
+  /* visibility: hidden; */
+}
+
+#modalFormContact #dataContact #channelsInfoContact #preferenceChannel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font: 600 13px 'Open Sans', sans-serif;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #preferenceChannel #titlePreferenceChannel {
+  margin: 0 0 10.9px 0;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #preferenceChannel .selectChannelPreference {
+  position: relative;
+  margin: 0 0 25px 0;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #preferenceChannel .selectChannelPreference span {
+  position: absolute;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #preferenceChannel .selectChannelPreference .icon-heart {
+  color: #DE0028;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #preferenceChannel .selectChannelPreference .icon-ban {
+  color: #BB3E3F;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #preferenceChannel .selectChannelPreference .icon-heart, #modalFormContact #dataContact #channelsInfoContact #preferenceChannel .selectChannelPreference .icon-ban {
+  font-size: 16px;
+  left: 10.3px;
+  top: 9px;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #preferenceChannel .selectChannelPreference .arrowSelectPreference {
+  font-size: 20px;
+  right: 15px;
+  top: 7px;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #preferenceChannel .selectChannelPreference select {
+  width: 190px;
+  height: 35.5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 6px;
+  border: 1px solid #C6CAcc;
+  padding: 0 30.2px;
+  cursor: pointer;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #buttonEditSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 17px 0 0 0;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #buttonEditSection button {
+  width: 143px;
+  height: 34px;
+  background-color: #FFFFFF;
+  border-radius: 1.5px;
+  border: solid 1px #1D72C2;
+  font: 600 13px 'Open Sans', sans-serif;
+  color: #1D72C2;
+  margin: 13px 0;
+  cursor: pointer;
+}
+
+#modalFormContact #dataContact #channelsInfoContact #buttonEditSection button span {
+  margin: 0 11.7px 0 0;
+}
+
+#modalFormContact #dataContact #buttonsFinalForm {
+  -ms-flex-item-align: end;
+      align-self: end;
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#modalFormContact #dataContact #buttonsFinalForm button {
+  width: 173px;
+  height: 42px;
+  margin: 0;
+  font: 600 13px 'Open Sans', sans-serif;
+  cursor: pointer;
+}
+
+#modalFormContact #dataContact #buttonsFinalForm #deleteContactForm {
+  background-color: #FFFFFF;
+  color: #F03738;
+}
+
+#modalFormContact #dataContact #buttonsFinalForm #createEditContact {
+  border-radius: 2px;
+  background-color: #429C41;
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/*# sourceMappingURL=contacts.css.map */

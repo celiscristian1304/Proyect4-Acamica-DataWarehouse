@@ -1,0 +1,28 @@
+header{
+    display: flex;
+    align-items: center;
+    height: 64px;
+    background-color: #1D72C2;
+    justify-content: space-between;
+    #mainPage{
+        margin: 0 0 0 2.19%;
+        img{
+            width: 50px;
+        }
+    }
+    #pages{
+        width: 400.2px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 64px;
+        margin: 0 2.19% 0 0;
+        .pagesDataWarehouse{
+            color: #FFFFFF;
+            font: 300 14.7px 'Open Sans', sans-serif;
+            &:hover{
+                font-weight: 600;
+            }
+        }
+    }
+}

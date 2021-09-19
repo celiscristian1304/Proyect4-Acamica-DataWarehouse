@@ -1,0 +1,703 @@
+@import '_initStyles';
+@import '_fonts';
+@import '_errorCode401';
+@import '_header';
+@import '_modalAlertDelete';
+
+header{
+    #pages{
+        /* The following code lines underline the words with a specific length and position */
+        background-image: linear-gradient(rgba($color: #FFFFFF , $alpha: 1),rgba($color: #FFFFFF , $alpha: 1));
+        background-position: left 0% bottom;
+        background-size: 17% 3px;
+        background-repeat: no-repeat;
+        /* ------------------------------------------------------------------------------ */
+        #contactsPage{
+            font-weight: 600;
+        }
+    }
+}
+
+h1{
+    font: 900 17.6px 'Open Sans', sans-serif;
+    color: #000000;
+    margin: 39.6px 0 20.3px 29.4px;
+}
+
+#searchFilter{
+    margin: 0 0 0 540.5px;
+    width: 40px;
+    height: 40px;
+    color: #1D72C2;
+    font-size: 17.5px;
+    padding: 0;
+    border: rgba($color: #000000, $alpha: 0.25) solid 1px;
+    background-color: #FFFFFF;
+    border-radius: 3.5px;
+    cursor: pointer;
+}
+
+#newContact{
+    font: 300 13.4px 'Open Sans', sans-serif;
+    position: absolute;
+    right: 0;
+    width: 173px;
+    height: 42px;
+    border-radius: 2px;
+    background-color: #1D72C2;
+    color: #FFFFFF;
+    margin: 0 28px 0 0;
+    cursor: pointer;
+}
+
+#containerSelectedInfo{
+    display: flex;
+    justify-content: center;
+    margin: 49.5px 0 4.5px 0;
+    visibility: hidden;
+    #contactsSelectedDone{
+        display: flex;
+        width: 95.9%;
+        justify-content: space-between;
+        #tagInfoCountSelected{
+            font: 600 10px 'Open Sans', sans-serif;
+            background-color: rgba(37, 150, 190,0.10);
+            color: #0683F9;
+            padding: 11.6px 10.7px 7.9px 10.7px;
+        }
+        #deleteAllContactsSelected{
+            background-color: #FFFFFF;
+            font: 300 10.8px 'Open Sans', sans-serif;
+            color: #1D72C2;
+            padding: 0;
+            cursor: pointer;
+            .icon-delete{
+                color: #1D72C2;
+                font-size: 15px;
+                margin: 0 9.7px 0 0;
+            }
+        }
+    }
+}
+
+/* Style fot contacts table -------------------------------------------------------------------------------------------- */
+
+#tableContacts{
+    width: 95.9%;
+    border: rgba($color: #000000, $alpha: 0.1) solid 1px;
+    overflow: visible;
+    thead{
+        tr{
+            th{
+                font: 600 12.3px 'Open Sans', sans-serif;
+                text-align: left;
+                padding: 34.5px 0 22px 17px;
+                color: #000000;
+                border-bottom: rgba($color: #000000, $alpha: 0.1) solid 1px;
+                .order{
+                    transform: rotate(90deg);
+                    display: inline-block;
+                    position: absolute;
+                }
+            }
+            th:nth-child(1){
+                font-size: 15px;
+                padding: 34.5px 13.5px 22px 13.5px;
+                text-align: center;
+            }
+            .icon-check_box_outline_blank{
+                color: rgba($color: #000000, $alpha: 0.5);
+            }
+            .icon-indeterminate_check_box{
+                color: rgba($color: #0683F9, $alpha: 0.5);
+            }
+            th:nth-child(7){
+                text-align: center;
+                padding: 22px 0;
+            }
+            th:nth-child(6){
+                max-width: 186px;
+            }
+        }
+    }
+    tbody{
+        tr{
+            .dataTables_empty{
+                font: 300 10px 'Open Sans', sans-serif;
+            }
+            &:hover{
+                background-color: rgba($color: #000000, $alpha: 0.05);
+            }
+            &:hover .icon-delete{
+                display: initial;
+            }
+            &:hover .icon-edit-pencil{
+                display: initial;
+            }
+            &:hover .icon-more-horizontal{
+                display: none;
+            }
+            td{
+                text-align: left;
+                .percentage{
+                    width: 109.1px;
+                    height: 8px;
+                    border-radius: 4px;
+                    background-color: #E8E8E8;
+                    position: relative;
+                    .progression{
+                        height: inherit;
+                        border-radius: 4px;
+                        //width:25%; //To change
+                        position: absolute;
+                        //background-color: #1CC1F5; //To change
+                    }
+                }
+                .icon-delete, .icon-edit-pencil{
+                    display: none;
+                    font-size: 15px;
+                    color: rgba($color: #000000, $alpha: 0.5);
+                    cursor: pointer;
+                }
+                .icon-delete{
+                    margin-right: 11.8px;
+                    &:hover{
+                        color: #DE0028;
+                    }
+                }
+                .icon-edit-pencil{
+                    margin-left: 11.8px;
+                    &:hover{
+                        color: #1D72C2;
+                    }
+                }
+            }
+            .morActions{
+                padding: 0;
+            }
+            td:nth-child(1), td:nth-child(7){
+                text-align: center;
+            }
+            td:nth-child(1){
+                font-size: 15px;
+                cursor: pointer;
+            }
+            .icon-check_box_outline_blank{
+                color: rgba($color: #000000, $alpha: 0.5);
+            }
+            .icon-check_box{
+                color: #0683F9;
+            }
+            td:nth-child(4), td:nth-child(5){
+                font: 600 12.3px 'Open Sans', sans-serif;
+                padding-left: 17px;
+            }
+            .contact{
+                padding: 16px 0 14.75px 19px;
+            }
+            .regionCountry{
+                padding: 16px 0 14.75px 16px;
+            }
+            .contact, .regionCountry{
+                div:nth-child(1){
+                    font: 600 12.3px 'Open Sans', sans-serif;
+                    color: #000000;
+                }
+                div:nth-child(2){
+                    font: 600 10px 'Open Sans', sans-serif;
+                    color: rgba($color: #000000, $alpha: 0.5);
+                }
+            }
+            .interest{
+                font: 600 12.3px 'Open Sans', sans-serif;
+                padding: 24.7px 19.9px 19px 17.5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 186px;
+            }
+        }
+    }
+}
+
+.sorting .icon-arrows{
+    color: #E8E8E8;
+}
+
+.sorting_asc .icon-arrows, .sorting_desc .icon-arrows{
+    color: #1D72C2;
+}
+
+#tableContacts_wrapper{
+    overflow: unset;
+}
+
+/* Move the input search according to the request */
+.top{
+    #tableContacts_filter{
+        label{
+            input{
+                position: absolute;
+                width: 502px;
+                height: 41px;
+                left: 26px;
+                top: -127px;
+                overflow: none;
+                font: 300 12.5px 'Open Sans', sans-serif;
+                padding: 6.9px 13.5px 12.6px 13.5px;
+            }
+        }
+    }
+}
+
+/* Move elemnts below */
+.bottom{
+    position: relative;
+    #tableContacts_length{
+        position: absolute;
+        left: 29.2px;
+        top: 23.8px;
+        label{
+            font: 300 12.1px 'Open Sans', sans-serif;
+            color: rgba($color: #000000, $alpha: 0.5);
+            select{
+                border: none;
+                padding: 0;
+                margin-left: 7px;
+                font: 300 12.1px 'Open Sans', sans-serif;
+                color: rgba($color: #000000, $alpha: 0.5);
+                cursor: pointer;
+            }
+        }
+    }
+    #tableContacts_info{
+        position: absolute;
+        right: 136.6px;
+        top: 23.8px;
+        padding: 0;
+        font: 300 12.1px 'Open Sans', sans-serif;
+        color: rgba($color: #000000, $alpha: 0.5);
+    }
+    #tableContacts_paginate{
+        margin: 10px 29.2px 0 0;
+        a{
+            span{
+                font: 300 12.1px 'Open Sans', sans-serif;
+                color: rgba($color: #000000, $alpha: 0.5);
+            }
+            &:hover span{
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+footer{
+    width: 100%;
+    height: 70px;
+}
+
+/* Form style----------------------------------------------------------------------------------------------------------- */
+
+#modalFormContact{
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    #dataContact{
+        width: 1215px;
+        height: fit-content;
+        background-color: #FFFFFF;
+        position: relative;
+        margin: 96px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #backgroundColorTop{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 140px;
+            background-color: #1D72C2;
+        }
+        #formHeader{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1172px;
+            margin: 17px 0;
+            h2,span{
+                color: #FFFFFF;
+                padding: 0;
+                margin: 0;
+            }
+            h2{
+                font: 600 20px 'Open Sans', sans-serif;
+            }
+            span{
+                font: 300 28px 'Open Sans', sans-serif;
+                cursor: pointer;
+            }
+        }
+        #mainInfoContact{
+            position: relative;
+            background-color: #FFFFFF;
+            width: 1172px;
+            height: fit-content;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 6.5px;
+            border: 3px solid #0683F9;
+            div{
+                display: flex;
+                flex-direction: column;
+                margin: 34.4px 0 12.6px 0;
+                label{
+                    font: 600 13px 'Open Sans', sans-serif;
+                    margin: 0 0 10.6px 0;
+                    span{
+                        color: #F03738;
+                        visibility: visible;
+                        font-style: normal;
+                    }
+                }
+                input{
+                    font: 600 13px 'Open Sans', sans-serif;
+                    width: 190px;
+                    height: 35.5px;
+                    border: 1px solid #CCCCCC;
+                    border-radius: 5px;
+                    padding: 0 9.2px; 
+                }
+                span{
+                    font: 600 12px 'Open Sans', sans-serif;
+                    font-style: italic;
+                    color: #F03738;
+                    margin: 11.7px 0 0 0;
+                    /* visibility: hidden; */
+                }
+            }
+            #selectCompany{
+                #companyOption{
+                    margin: 0;
+                    width: 190px;
+                    #caretSelectCompany{
+                        position: absolute;
+                        right: 25px;
+                        z-index: 1;
+                        top: 75px;
+                        color: rgba(0,0,0,0.50);
+                        margin: 0;
+                        visibility: visible;
+                    }
+                    #companyOptions{
+                        font: 300 11px 'Open Sans', sans-serif;
+                        width: 190px;
+                        min-height: 35.5px;
+                        border: 1px solid #CCCCCC;
+                        border-radius: 5px;
+                        padding: 0 21px 0 9.2px; 
+                        position: absolute;
+                        top: 63px;
+                        visibility: visible;
+                        cursor: pointer;
+                        appearance: none;
+                        option{
+                            margin: 4px 0;
+                            cursor: pointer;
+                        }
+                        option:nth-child(1){
+                            color: rgba(0,0,0,0.60);
+                        }
+                    }
+                }
+                #alertCompany{
+                    position: absolute;
+                    top: 100px;
+                    width: 190px;
+                }
+            }
+        }
+        #secondaryInfoContact{
+            /* position: relative; */
+            width: 1146px;
+            margin: 35.3px 0 55px 0;
+            overflow: visible;
+            display: flex;
+            justify-content: space-between;
+            .selectSecondaryInfo{
+                position: relative;
+                overflow: visible;
+                .labelSelect{
+                    font: 600 13px 'Open Sans', sans-serif;
+                    .obligatory{
+                        color: #F03738;
+                    }
+                }
+                .selectOption{
+                    position: relative;
+                    overflow: visible;
+                    width: 190px;
+                    span{
+                        position: absolute;
+                        right: 15px;
+                        z-index: 1;
+                        top: 17.5px;
+                        color: rgba(0, 0, 0, 0.5);
+                    }
+                    select{
+                        position: absolute;
+                        top: 8.1px;
+                        width: 100%;
+                        height: 35.5px;
+                        appearance: none;
+                        border-radius: 6px;
+                        border: 1px solid #C6CAcc;
+                        font: 600 12.1px 'Open Sans', sans-serif;
+                        padding: 0 8.6px;
+                        cursor: pointer;
+                        option:nth-child(1){
+                            color: rgba(0, 0, 0, 0.6);
+                        }
+                        option{
+                            margin: 6px 0;
+                        }
+                    }
+                }
+                .alertSelect{
+                    font: 600 12px 'Open Sans', sans-serif;
+                    font-style: italic;
+                    color: #F03738;
+                    position: absolute;
+                    top: 67.4px;
+                    width: 190px;
+                    /* visibility: hidden; */
+                }
+            }
+            #interestSection{
+                width: 319.5px;
+                overflow: visible;
+                label{
+                    font: 600 13px 'Open Sans', sans-serif;
+                }
+                #interestRepresentation{
+                    overflow: visible;
+                    margin: 10px 0 0 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    #horizontalBar{
+                        width: 235px;
+                        height: 13px;
+                        position: relative;
+                        overflow: visible;
+                        background: #FFFFFF;
+                        border: 1px solid #C6CACC;
+                        border-radius: 3.5px;
+                        display: flex;
+                        #circleSelection{
+                            width: 19px;
+                            height: 19px;
+                            border: 1px solid #C6CACC;
+                            border-radius: 8rem;
+                            position: absolute;
+                            background-color: #FFFFFF;
+                            top: -4px;
+                            left: -5px; //0% position: -5px, 25% position: 48px, 50% position: 107px, 75% position: 166px, 100% position: 220px
+                        }
+                        .specificPercentajeColor{
+                            width: 25%;
+                            height: inherit;
+                            cursor: pointer;
+                        }
+                        #twentyFive, #fifty, #seventyFive{
+                            border-right: 1px solid #C6CACC;
+                        }
+                    }
+                    #interestPercentage{
+                        position: relative;
+                        #caretSelectInterest{
+                            position: absolute;
+                            right: 10px;
+                            top: 10px;
+                            color: rgba(0, 0, 0, 0.5);
+                        }
+                        #selectInterest{
+                            font: 600 13px 'Open Sans', sans-serif;
+                            width: 70px;
+                            height: 35px;
+                            appearance: none;
+                            border-radius: 6px;
+                            border: 1px solid #C6CAcc;
+                            padding: 0 8.6px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .inputSecondary{
+            display: flex;
+            flex-direction: column;
+            .labelInput{
+                font: 600 13px 'Open Sans', sans-serif;
+                margin: 0 0 10.1px 0;
+            }
+            .inputPerSe{
+                width: 190px;
+                height: 34.8px;
+                border-radius: 6px;
+                border: 1px solid #C6CAcc;
+                padding: 0 8.6px;
+                color: #888888;
+                background-color: rgba(0,0,0,0.10);
+                cursor: not-allowed;
+            }
+
+        }
+        #channelsInfoContact{
+            width: 710px;
+            align-self: flex-start;
+            margin: 0 0 0 31px;
+            display: flex;
+            justify-content: space-between;
+            #specificChannelContact, #dataChannel{
+                font: 600 13px 'Open Sans', sans-serif;
+                display: flex;
+                flex-direction: column;
+            }
+            #specificChannelContact{
+                /* font: 600 13px 'Open Sans', sans-serif;
+                width: 190px;
+                display: flex;
+                flex-direction: column; */
+                #titleChannel{
+                    margin: 0 0 10.9px 0;
+                    width: 110px;
+                }
+                span:nth-child(2){
+                    margin: 14.4px 0 41.1px 9.2px;
+
+                }
+                span:nth-child(3), span:nth-child(4), span:nth-child(5){
+                    margin: 0 0 41.1px 9.2px;
+                }
+                span:nth-child(6){
+                    margin: 0 0 9.6px 9.2px;
+                }
+            }
+            #dataChannel{
+                margin: 0 0 10.9px 0;
+                width: fit-content;
+                #titleDataChannel{
+                    margin: 0 0 5px 0;
+                }
+                div{
+                    margin: 6px 0 0 0;
+                    span{
+                        font: 600 12px 'Open Sans', sans-serif;
+                        font-style: italic;
+                        color: #F03738;
+                        margin: 1px 0 0 0;
+                        /* visibility: hidden; */
+                    }
+                }
+            }
+            #preferenceChannel{
+                display: flex;
+                flex-direction: column;
+                font: 600 13px 'Open Sans', sans-serif;
+                #titlePreferenceChannel{
+                    margin: 0 0 10.9px 0;
+                }
+                .selectChannelPreference{
+                    position: relative;
+                    margin: 0 0 25px 0;
+                    span{
+                        position: absolute;
+                    }
+                    .icon-heart{
+                        color: #DE0028;
+                    }
+                    .icon-ban{
+                        color: #BB3E3F;
+                    }
+                    .icon-heart, .icon-ban{
+                        font-size: 16px;
+                        left: 10.3px;
+                        top: 9px;
+                    }
+                    .arrowSelectPreference{
+                        font-size: 20px;
+                        right: 15px;
+                        top: 7px;
+                    }
+                    select{
+                        width: 190px;
+                        height: 35.5px;
+                        appearance: none;
+                        border-radius: 6px;
+                        border: 1px solid #C6CAcc;
+                        padding: 0 30.2px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            #buttonEditSection{
+                display: flex;
+                flex-direction: column;
+                padding: 17px 0 0 0;
+                button{
+                    width: 143px;
+                    height: 34px;
+                    background-color: #FFFFFF;
+                    border-radius: 1.5px;
+                    border: solid 1px #1D72C2;
+                    font: 600 13px 'Open Sans', sans-serif;
+                    color: #1D72C2;
+                    margin: 13px 0;
+                    cursor: pointer;
+                    span{
+                        margin: 0 11.7px 0 0;
+                    }
+                }
+            }
+        }
+        #buttonsFinalForm{
+            align-self: end;
+            margin: 30px;
+            display: flex;
+            button{
+                width: 173px;
+                height: 42px;
+                margin: 0;
+                font: 600 13px 'Open Sans', sans-serif;
+                cursor: pointer;
+            }
+            #deleteContactForm{
+                background-color: #FFFFFF;
+                color: #F03738;
+            }
+            #createEditContact{
+                border-radius: 2px;
+                background-color: #429C41;
+                color: #FFFFFF;
+
+            }
+        }
+    }
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------- */

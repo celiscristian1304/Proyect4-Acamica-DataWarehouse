@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../font-symbols/icomoon.eot?d98isb');
+  src:  url('../font-symbols/icomoon.eot?d98isb#iefix') format('embedded-opentype'),
+    url('../font-symbols/icomoon.ttf?d98isb') format('truetype'),
+    url('../font-symbols/icomoon.woff?d98isb') format('woff'),
+    url('../font-symbols/icomoon.svg?d98isb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change ../font-symbols */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-office:before {
+  content: "\e90d";
+}
+.icon-earth:before {
+  content: "\e90b";
+}
+.icon-globe:before {
+  content: "\e90b";
+}
+.icon-language:before {
+  content: "\e90b";
+}
+.icon-web:before {
+  content: "\e90b";
+}
+.icon-internet:before {
+  content: "\e90b";
+}
+.icon-sphere:before {
+  content: "\e90b";
+}
+.icon-planet:before {
+  content: "\e90b";
+}
+.icon-key:before {
+  content: "\e90a";
+}
+.icon-transfer:before {
+  content: "\e906";
+}
+.icon-arrows:before {
+  content: "\e906";
+}
+.icon-upload:before {
+  content: "\e907";
+}
+.icon-search:before {
+  content: "\e908";
+}
+.icon-zoom:before {
+  content: "\e908";
+}
+.icon-magnifier:before {
+  content: "\e908";
+}
+.icon-magnifying-glass:before {
+  content: "\e908";
+}
+.icon-more-horizontal:before {
+  content: "\e900";
+}
+.icon-location_on:before {
+  content: "\e90c";
+}
+.icon-place:before {
+  content: "\e90c";
+}
+.icon-room:before {
+  content: "\e90c";
+}
+.icon-indeterminate_check_box:before {
+  content: "\e901";
+}
+.icon-check_box_outline_blank:before {
+  content: "\e902";
+}
+.icon-check_box:before {
+  content: "\e903";
+}
+.icon-delete:before {
+  content: "\e904";
+}
+.icon-edit-pencil:before {
+  content: "\e905";
+}
+.icon-camera:before {
+  content: "\e909";
+}
+.icon-pictures:before {
+  content: "\e909";
+}
+.icon-photos:before {
+  content: "\e909";
+}
+.icon-images:before {
+  content: "\e909";
+}
+.icon-heart:before {
+  content: "\f004";
+}
+.icon-chevron-left:before {
+  content: "\f053";
+}
+.icon-chevron-right:before {
+  content: "\f054";
+}
+.icon-ban:before {
+  content: "\f05e";
+}
+.icon-caret-down:before {
+  content: "\f0d7";
+}
+.icon-caret-up:before {
+  content: "\f0d8";
+}
